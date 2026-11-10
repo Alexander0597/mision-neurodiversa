@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón de la Fama | Misión Neurodiversa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="logros">
+    <div id="topbar"></div>
+
+    <main class="contenedor">
+        <section class="perfil anim-entrada" id="perfil"></section>
+
+        <section class="tarjeta">
+            <h2 class="titulo-seccion">📊 Calificaciones por reto</h2>
+            <p class="subtitulo">Se guarda siempre tu mejor nota. Aprobás cada reto con 6 o más. ⭐ 6+ · ⭐⭐ 7+ · ⭐⭐⭐ 9+</p>
+            <div class="tabla-retos" id="tabla-retos"></div>
+        </section>
+
+        <section class="tarjeta">
+            <h2 class="titulo-seccion">🏅 Salón de Insignias <small style="font-size:1rem;color:var(--texto-suave)" id="contador-insignias"></small></h2>
+            <p class="subtitulo">Algunas insignias son secretas... ¡seguí jugando para descubrirlas todas!</p>
+            <div class="grid-insignias" id="grid-insignias"></div>
+        </section>
+
+        <section class="tarjeta" id="evaluacion-final">
+            <h2 class="titulo-seccion">📝 Bitácora de Salida</h2>
+            <p class="subtitulo">Escribí tu reflexión final y ganá +50 XP.</p>
+            <form id="form-bitacora" novalidate>
+                <label for="reflexion"><b>¿Cuál fue el "facto" o estrategia que más te sirve para la vida escolar? ¿Por qué?</b></label>
+                <textarea id="reflexion" class="input-texto" style="margin-top:10px" rows="5"
+                    placeholder="Ej: Me sirvió lo de las micro-metas porque..."></textarea>
+                <div class="acciones" style="justify-content:flex-start">
+                    <button type="submit" class="btn btn-primario">Guardar bitácora 💾</button>
+                </div>
+                <div id="fb-bitacora" class="explicacion" hidden></div>
+            </form>
+        </section>
+
+        <section class="tarjeta" id="certificado"></section>
+
+        <div class="acciones no-imprimir">
+            <button class="btn btn-peligro" id="btn-reiniciar">🗑️ Reiniciar progreso</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos: ¿Qué es el TDAH? | Misión Neurodiversa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="aprender">
+    <div id="topbar"></div>
+
+    <main class="contenedor">
+        <section class="hero-pagina anim-entrada">
+            <span class="hero-deco" aria-hidden="true">📚</span>
+            <span class="etiqueta">Etapa 0 · Investigación</span>
+            <h1>Base de Datos: ¿Qué es realmente el TDAH?</h1>
+            <p>Antes de enfrentarte a los retos, tu base teórica tiene que estar sólida. El Trastorno por Déficit de
+                Atención e Hiperactividad es una condición del neurodesarrollo real y comprobada por la ciencia.</p>
+            <div class="mision-checklist">
+                <span class="check-item" id="check-video">🎬 Mirar el video</span>
+                <span class="check-item" id="check-tarjetas">🃏 Girar las tarjetas (<span
+                        id="contador-tarjetas">0/6</span>)</span>
+                <span class="check-item" id="check-tabs">🧭 Explorar las 3 presentaciones</span>
+            </div>
+        </section>
+
+        <section class="tarjeta anim-entrada">
+            <h2 class="titulo-seccion">🎬 Misión 1: Mirá el video</h2>
+            <p class="subtitulo">Prestá atención: muchas respuestas de los retos están acá.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/iICUUWgDl9g" title="¿Qué es el TDAH?"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="acciones">
+                <button class="btn btn-secundario" id="btn-video-visto">✔ Ya miré el video</button>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2 class="titulo-seccion">🃏 Misión 2: Puntos clave de tu investigación</h2>
+            <p class="subtitulo">Tocá cada tarjeta para descubrir la información oculta.</p>
+            <div class="grid-flip">
+                <button class="flip" data-id="enfermedad">
+                    <div class="flip-inner">
+                        <div class="flip-cara flip-frente"><span class="flip-emoji">🌈</span>
+                            <h3>¿Es una enfermedad?</h3><small>Tocá para girar ↻</small>
+                        </div>
+                        <div class="flip-cara flip-dorso"><strong>No es una enfermedad</strong>Es una forma diferente
+                            de desarrollo del cerebro. Forma parte de la <b>neurodiversidad</b>.</div>
+                    </div>
+                </button>
+                <button class="flip" data-id="dopamina">
+                    <div class="flip-inner">
+                        <div class="flip-cara flip-frente"><span class="flip-emoji">⚗️</span>
+                            <h3>La dopamina</h3><small>Tocá para girar ↻</small>
+                        </div>
+                        <div class="flip-cara flip-dorso"><strong>Circuitos de recompensa</strong>Hay diferencias en
+                            cómo se procesa la dopamina, por eso cuesta iniciar tareas aburridas.</div>
+                    </div>
+                </button>
+                <button class="flip" data-id="ejecutivas">
+                    <div class="flip-inner">
+                        <div class="flip-cara flip-frente"><span class="flip-emoji">🎛️</span>
+                            <h3>Funciones ejecutivas</h3><small>Tocá para girar ↻</small>
+                        </div>
+                        <div class="flip-cara flip-dorso"><strong>La "directora de orquesta"</strong>Organización,
+                            manejo del tiempo, memoria de trabajo, control de impulsos y regulación emocional.</div>
+                    </div>
+                </button>
+                <button class="flip" data-id="prefrontal">
+                    <div class="flip-inner">
+                        <div class="flip-cara flip-frente"><span class="flip-emoji">🧠</span>
+                            <h3>Corteza prefrontal</h3><small>Tocá para girar ↻</small>
+                        </div>
+                        <div class="flip-cara flip-dorso"><strong>El centro de control</strong>Es la zona del cerebro
+                            (detrás de la frente) que más participa en las funciones ejecutivas.</div>
+                    </div>
+                </button>
+                <button class="flip" data-id="hiperfoco">
+                    <div class="flip-inner">
+                        <div class="flip-cara flip-frente"><span class="flip-emoji">🔦</span>
+                            <h3>Hiperfoco</h3><small>Tocá para girar ↻</small>
+                        </div>
+                        <div class="flip-cara flip-dorso"><strong>Atención al 200%</strong>Ante algo muy
+                            interesante, una persona con TDAH puede concentrarse intensamente durante horas.</div>
+                    </div>
+                </button>
+                <button class="flip" data-id="apoyo">
+                    <div class="flip-inner">
+                        <div class="flip-cara flip-frente"><span class="flip-emoji">🤝</span>
+                            <h3>¿Se puede acompañar?</h3><small>Tocá para girar ↻</small>
+                        </div>
+                        <div class="flip-cara flip-dorso"><strong>¡Sí!</strong>Con estrategias, apoyos en la escuela,
+                            acompañamiento profesional y, a veces, medicación indicada por un médico.</div>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2 class="titulo-seccion">🧭 Misión 3: Las tres presentaciones del TDAH</h2>
+            <p class="subtitulo">El TDAH no se ve igual en todas las personas. Explorá cada pestaña.</p>
+            <div class="tabs" role="tablist">
+                <button class="tab activa" role="tab" aria-selected="true" data-panel="a">😶‍🌫️ Inatenta</button>
+                <button class="tab" role="tab" aria-selected="false" data-panel="b">⚡ Hiperactiva-impulsiva</button>
+                <button class="tab" role="tab" aria-selected="false" data-panel="c">🌀 Combinada</button>
+            </div>
+            <div class="panel-tab" id="a" role="tabpanel">
+                <span class="grande">😶‍🌫️</span>
+                <div>
+                    <h3>Presentación inatenta</h3>
+                    <ul>
+                        <li>Se distrae con facilidad y parece "estar en las nubes".</li>
+                        <li>Pierde objetos y olvida tareas o consignas.</li>
+                        <li>Le cuesta organizarse y terminar lo que empieza.</li>
+                        <li>Suele pasar desapercibida, sobre todo en chicas.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-tab" id="b" role="tabpanel" hidden>
+                <span class="grande">⚡</span>
+                <div>
+                    <h3>Presentación hiperactiva-impulsiva</h3>
+                    <ul>
+                        <li>Necesita moverse, le cuesta quedarse sentado/a.</li>
+                        <li>Habla mucho o interrumpe sin querer.</li>
+                        <li>Actúa o responde antes de pensar.</li>
+                        <li>Le cuesta esperar su turno.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel-tab" id="c" role="tabpanel" hidden>
+                <span class="grande">🌀</span>
+                <div>
+                    <h3>Presentación combinada</h3>
+                    <ul>
+                        <li>Reúne características de las dos anteriores.</li>
+                        <li>Es la presentación más frecuente.</li>
+                        <li>Las características pueden cambiar con la edad.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tarjeta">
+            <h2 class="titulo-seccion">💡 ¿Sabías que...?</h2>
+            <div class="dato-curioso">
+                <span class="bombilla">💡</span>
+                <p id="dato-texto" aria-live="polite"></p>
+            </div>
+            <div class="acciones"><button class="btn btn-secundario" id="btn-dato">Otro dato curioso 🔄</button></div>
+        </section>
+
+        <section class="tarjeta cta-final">
+            <span class="icono-gigante">🚀</span>
+            <h2 class="titulo-seccion" style="justify-content:center">¿Terminaste tu investigación?</h2>
+            <p class="subtitulo">Completá las tres misiones de esta página para desbloquear el Reto 1.</p>
+            <button class="btn btn-primario btn-grande" id="btn-completar-info" disabled>Completar
+                investigación</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

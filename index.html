@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Neurodiversa: Objeto de Aprendizaje sobre TDAH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="inicio">
+
+    <section id="pantalla-login" class="pantalla-login" hidden>
+        <form class="caja-login anim-entrada" id="form-login" novalidate>
+            <span class="cerebro-logo">🧠</span>
+            <h1>Misión Neurodiversa</h1>
+            <p>Bienvenido/a al Laboratorio Central de Neuroconectividad. Investigá, superá retos, ganá XP y desbloqueá
+                insignias.</p>
+
+            <label for="nombre-jugador">1. Ingresá tu nombre de agente:</label>
+            <input type="text" id="nombre-jugador" class="input-texto" placeholder="Ej: Alex" autocomplete="off"
+                maxlength="30">
+
+            <label>2. Elegí tu avatar:</label>
+            <div class="selector-avatar" id="selector-avatar"></div>
+
+            <button type="submit" class="btn btn-primario btn-grande">Iniciar Misión 🚀</button>
+            <div id="error-login" class="aviso" hidden></div>
+        </form>
+    </section>
+
+    <div id="hub" hidden>
+        <div id="topbar"></div>
+        <main class="contenedor">
+            <section class="hero-hub anim-entrada">
+                <span class="hero-avatar" id="hub-avatar">🦊</span>
+                <div>
+                    <span class="etiqueta">Centro de comando</span>
+                    <h1>¡Hola, <span id="hub-nombre">Agente</span>! 👋</h1>
+                    <p>Tu misión: descubrir cómo funciona el cerebro con TDAH, derribar mitos y aprender estrategias
+                        reales.
+                        Avanzá por el mapa: cada etapa desbloquea la siguiente.</p>
+                    <div class="acciones" style="justify-content:flex-start">
+                        <a class="btn btn-oro" id="btn-continuar" href="aprender.html">Continuar ➜</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="estadisticas" id="hub-stats" aria-label="Tus estadísticas"></section>
+
+            <section class="tarjeta">
+                <h2 class="titulo-seccion">🗺️ Mapa de la misión</h2>
+                <p class="subtitulo">Completá cada etapa para desbloquear la próxima. Necesitás una nota de 6 o más para
+                    aprobar cada reto.</p>
+                <div class="mapa" id="mapa"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
